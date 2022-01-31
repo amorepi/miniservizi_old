@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about page of sample node app</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    <style>
+        body { padding-top:50px; color:blue }
+    </style>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="container" style="background-color: rgb(109, 22, 48);">
+    <header>
+        <nav class="navbar navbar-exand-lg navbar-light" style="background-color:crimson;">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" style="background-color: white;">Home</a>
+                </li>
+                &nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="/about" style="background-color: white;">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1><%= (new Date()).toLocaleString('it-IT', { timeZone: 'CET' })  %></h1>
+            <h1>This is a sample application. It has been created using NodeJS, Expressjs and EJS.</h1>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center" style="background-color: white;">@copy; Copyright 2020</p>
+    </footer>
+</body>
+</html>
